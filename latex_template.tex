@@ -1,0 +1,55 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[margin=1in,headheight=13.6pt]{geometry} %fullpage, without fancyhdr bugs
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+
+%Get Title, Project and Author Variables
+\newcommand{\gettitle}{Title}
+\newcommand{\getproject}{Project}
+\newcommand{\getauthor}{Author}
+
+\title{\gettitle}
+\date{\today}
+\author{\getauthor}
+
+\pagestyle{fancy}
+
+\lhead{Version 1.0\\ \today}
+\lfoot{\getauthor\\\gettitle}
+\cfoot{}
+\rfoot{\thepage}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vfill
+    {\bfseries\Large
+        \gettitle\\
+        \getproject\\
+        \today 
+        \vskip2cm
+        \getauthor\\
+    }    
+    \vfill
+    \includegraphics[width=10cm]{52dn.jpg}
+    \vfill
+    \vfill
+\end{titlepage}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+\bibliographystyle{plain}
+\bibliography{sources} 
+
+\end{document}
+ 
